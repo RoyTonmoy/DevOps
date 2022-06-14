@@ -1,0 +1,8 @@
+---
+- hosts: git_server
+  remote_user: tonmoy
+  become: yes
+
+  roles:
+      - common
+      - git-server  
